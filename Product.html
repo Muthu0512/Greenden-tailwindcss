@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greenden</title>
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body>
+    <!-- Responsive nav bar -->
+    <nav
+      class="bg-green-200 p-5 flex justify-between items-center shadow-xl sticky top-0 z-10"
+    >
+      <h1 class="font-bold text-3xl">GREENDEN</h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6 md:hidden"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+
+      <ul class="flex gap-4 text-gray-600 hidden md:flex">
+        <li>
+          <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="Product.html">Products</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- product items -->
+    <section class="text-center mt-6" >
+      <h3 class="text-3xl font-bold mb-6">Our Products</h3>
+      <input type="text" placeholder="Search for a Product........" class="border border-black p-2 container rounded mb-6" />
+      <div class="grid grid-cols-2 gap-10 mt-6 md:grid-cols-4">
+        <div>
+          <img
+            src="./images/bestseller/Rose.jpg"
+            alt="Rose"
+            class="inline hover:shadow-xxl transform hover:-translate-y-3"
+          />
+          <h3>Rose Plant</h3>
+          <p>₹180</p>
+        </div>
+        <div>
+            <img
+              src="./images/bestseller/Snake.jpg"
+              alt="Snake"
+              class="inline hover:shadow-xxl transform hover:-translate-y-3"
+            />
+            <h3>Snake Plant</h3>
+            <p>₹160</p>
+          </div>
+          <div>
+            <img
+              src="./images/bestseller/Lily.jpg"
+              alt="Lily"
+              class="inline hover:shadow-xxl transform hover:-translate-y-3"
+            />
+            <h3>Lily Plant</h3>
+            <p>₹230</p>
+          </div>
+          <div>
+            <img
+              src="./images/bestseller/December.jpg"
+              alt="December"
+              class="inline hover:shadow-xxl transform hover:-translate-y-3"
+            />
+            <h3>December Plant</h3>
+            <p>₹200</p>
+          </div>
+          <div>
+            <img
+              src="./images/bestseller/Snake.jpg"
+              alt="Snake"
+              class="inline hover:shadow-xxl transform hover:-translate-y-3"
+            />
+            <h3>Snake Plant</h3>
+            <p>₹160</p>
+          </div>
+          <div>
+            <img
+              src="./images/bestseller/December.jpg"
+              alt="December"
+              class="inline hover:shadow-xxl transform hover:-translate-y-3"
+            />
+            <h3>December Plant</h3>
+            <p>₹200</p>
+          </div>
+          <div>
+            <img
+              src="./images/bestseller/Snake.jpg"
+              alt="Snake"
+              class="inline hover:shadow-xxl transform hover:-translate-y-3"
+            />
+            <h3>Snake Plant</h3>
+            <p>₹160</p>
+          </div>
+          <div>
+            <img
+              src="./images/bestseller/Lily.jpg"
+              alt="Lily"
+              class="inline hover:shadow-xxl transform hover:-translate-y-3"
+            />
+            <h3>Lily Plant</h3>
+            <p>₹230</p>
+          </div>
+      </div>
+    </section>
+     <!-- Footer-section -->
+    <section class="bg-green-200 p-4 my-5">
+      <h3 class="text-2xl font-bold mt-4">Greenden</h3>
+      <p class="mt-6">
+        The Standard shunk of lorem ipsum used in the 1500s is reproduced below
+        for those interest
+      </p>
+      <p class="mt-6">@2021 Greenday.com</p>
+    </section>
+  </body>
+</html>
