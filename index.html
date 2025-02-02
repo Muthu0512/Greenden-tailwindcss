@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Greenden</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="html" href="">
-    <!-- <link
-        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
   </head>
   <body>
     <!-- Responsive nav bar -->
     <nav
-      class="bg-green-200 p-5 flex justify-between items-center shadow-xl sticky top-0 z-10"
+      class="bg-green-300 p-5 flex justify-between items-center shadow-xl sticky top-0 z-10"
     >
       <h1 class="font-bold text-3xl">GREENDEN</h1>
       <svg
+        id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -36,13 +36,43 @@
           <a class="hover:underline hover:text-black" href="index.html">Home</a>
         </li>
         <li>
-          <a class="hover:underline hover:text-black" href="Product.html">Products</a>
+          <a class="hover:underline hover:text-black" href="Product.html"
+            >Products</a
+          >
         </li>
         <li>
-          <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
+    <!-- side nav bar -->
+    <section
+      id="sidenav"
+      class="bg-green-300 fixed z-20 top-0 transition-all duration-1000"
+      style="width: 50%; height: 100vh; right: -50%"
+    >
+      <div class="text-right p-6">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex gap-4 flex-col text-center text-gray-600">
+        <li>
+          <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="Product.html"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </section>
+
     <!-- header section -->
     <section class="bg-green-200 p-6 md:p-14 flex justify-center gap-10">
       <div>
@@ -147,7 +177,11 @@
       <h2 class="text-3xl font-bold mt-6">Best Seller</h2>
       <div class="grid grid-cols-2 mt-5 gap-10 md:grid-cols-4">
         <div>
-          <img src="./images/bestseller/Rose.jpg" alt="Rose" class="inline hover:shadow-xxl transform hover:-translate-y-3"/>
+          <img
+            src="./images/bestseller/Rose.jpg"
+            alt="Rose"
+            class="inline hover:shadow-xxl transform hover:-translate-y-3"
+          />
           <h3>Rose Plant</h3>
           <p>₹180</p>
         </div>
@@ -236,5 +270,6 @@
       </p>
       <p class="mt-6">@2021 Greenday.com</p>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>

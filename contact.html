@@ -16,6 +16,7 @@
     >
       <h1 class="font-bold text-3xl">GREENDEN</h1>
       <svg
+        id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -35,23 +36,52 @@
           <a class="hover:underline hover:text-black" href="index.html">Home</a>
         </li>
         <li>
-          <a class="hover:underline hover:text-black" href="Product.html">Products</a>
+          <a class="hover:underline hover:text-black" href="Product.html"
+            >Products</a
+          >
         </li>
         <li>
-          <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
+    <!-- side nav bar -->
+    <section
+      id="sidenav"
+      class="bg-green-300 fixed z-20 top-0 transition-all duration-1000"
+      style="width: 50%; height: 100vh; right: -50%"
+    >
+      <div class="text-right p-6">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex gap-4 flex-col text-center text-gray-600">
+        <li>
+          <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="Product.html"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </section>
     <!-- contact form -->
     <section class="bg-whitesmoke-900">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2
-          class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"
+          class="mb-4 text-4xl tracking-tight font-extrabold text-center dark:text-gray-800"
         >
           Contact Us
         </h2>
         <p
-          class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"
+          class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-700 sm:text-xl"
         >
           Got a technical issue? Want to send feedback about a beta feature?
           Need details about our Business plan? Let us know.
@@ -60,7 +90,7 @@
           <div>
             <label
               for="email"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              class="block mb-2 text-sm font-medium text-gray-900"
               >Your email</label
             >
             <input
@@ -74,7 +104,7 @@
           <div>
             <label
               for="subject"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              class="block mb-2 text-sm font-medium text-gray-900"
               >Subject</label
             >
             <input
@@ -88,7 +118,7 @@
           <div class="sm:col-span-2">
             <label
               for="message"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+              class="block mb-2 text-sm font-medium text-black-900 dark:text-gray-900"
               >Your message</label
             >
             <textarea
@@ -100,7 +130,7 @@
           </div>
           <button
             type="submit"
-            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            class="py-3 px-5 text-sm font-medium bg-gray-700 hover:bg-green-900 text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
           >
             Send message
           </button>
@@ -116,5 +146,6 @@
       </p>
       <p class="mt-6">@2021 Greenday.com</p>
     </section>
+    <script src="contact.js"></script>
   </body>
 </html>
